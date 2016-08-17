@@ -1,0 +1,14 @@
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th></th>     
+            <th></th>                        
+        </tr>
+    </thead>
+    
+    <tr ng-repeat="contact in contactList" 
+        contact-row contact="contact" delete="delete({ id: contact.id })" edit="edit({ contact: contact })">       
+    </tr>
+</table>
