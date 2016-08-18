@@ -82,14 +82,6 @@ angular.module("DirectiveApp", [])
     return {
         restrict: "E",
         templateUrl: "mainlist.html",
-        // controller: function() {
-        //     this.deleteContact = function(id) {
-        //         // console.log(this.delete)
-        //         this.delete(id);
-        //         console.log('we are here', id)
-        //     }
-        // },
-        // controllerAs: 'ctrl',
         scope: {
             contactList: "=",
             edit: "&",
@@ -118,27 +110,3 @@ angular.module("DirectiveApp", [])
         }
     };
 });
-//old ones      
-// .directive("mainApp", function () {
-//     return {
-//         restrict: "E",
-//         template: "<input type='text' ng-model='ctrl.nameInMain'/>{{ctrl.nameInMain}}<text name-in-text='ctrl.nameInMain' clear='ctrl.clear666()'></text>",
-//         controller: function () {
-//             this.nameInMain = 'foobar';
-//             this.clear666 = function () {
-//                 this.nameInMain = '';
-//             }
-//         },
-//         controllerAs: 'ctrl',
-//     }
-// })
-// .directive("text", function () {
-//     return {
-//         restrict: "E",
-//         scope: {
-//             nameInText: '=',
-//             clear: '&'
-//         },         
-//         template: "<h1>Hello <i>{{nameInText}}</i></h1><button ng-click='clear()'>clear</button>"
-//     }
-// }) 
